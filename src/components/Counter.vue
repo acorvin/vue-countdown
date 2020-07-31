@@ -35,7 +35,6 @@ export default {
     disHours: 0,
     disMinutes: 0,
     disSeconds: 0,
-    image: { backgroundImage: 'url(@/assets/flag.png)' },
   }),
   computed: {
     _sec: () => 1000,
@@ -47,9 +46,6 @@ export default {
     },
     _day() {
       return this._hr * 24
-    },
-    imgUrl() {
-      return require('../assets/flag.png')
     },
   },
   mounted() {
@@ -95,7 +91,7 @@ export default {
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-color: rgba(0, 0, 0, 0.4); /*dim the background*/
+  background-color: rgba(0, 0, 0, 0.4);
 }
 #grad {
   background-image: linear-gradient(
